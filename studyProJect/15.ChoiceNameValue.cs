@@ -11,7 +11,7 @@ namespace projectstudy
      */
     class ChoiceNameValue
     {
-        static void Main(string[] arg)
+        static void ChoiceNameValueTestClass(string[] arg)
         {
             Profile("김갑순", "12341234", "서울");
             Profile(name: "킴취", adress: "미국", phone: "43214321");

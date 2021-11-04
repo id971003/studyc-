@@ -10,7 +10,7 @@ namespace projectstudy
          * 일련의 기능을 하나로 묶은 코드 
          * 
          */
-        static void Main(string[] args)
+        static void MethodTestClass(string[] args)
         {
 
             Console.WriteLine(Clock.NowTime());

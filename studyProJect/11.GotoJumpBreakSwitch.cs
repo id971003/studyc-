@@ -13,7 +13,7 @@ namespace projectstudy
      */
     class GotoJumpBreakSwitch
     {
-        static void Main(string[] args)
+        static void GotoJumpBreakSwitchTestClass(string[] args)
         {
             //break 문 
             int a = 0;

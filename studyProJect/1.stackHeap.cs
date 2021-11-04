@@ -7,11 +7,10 @@ namespace projectstudy
     //스택 에 있는 값은 {} 를 만나며 바로 지워지지만 힙에 있는 값은 바로 지워지지않는다 
 
     //정수 계열 형식
-    class Program
-    {
-        static void Main(string[] args)
+    public class StackHeap
+    {//123
+        public static void StackHeapTestClass()
         {
-            //스택
             {
                 int a = 100;
                 int b = 200;

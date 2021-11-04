@@ -8,9 +8,9 @@ namespace projectstudy
      * object 형식과같이 참조 형식은 힙에 데이터를 할당한다
      * 이때 이 object 에 int 와 float 과 같은 스택 형식의 객체를 담았을때 이 스택형식의 값들이 힙에 할당 될수있도록 하는것 
      */
-    class boxing
+    public class Boxing
     {
-        static void Main(string[] args)
+        public static void BoxingTestClass()
         {
             object a = 20;//박싱
 

@@ -14,7 +14,7 @@ namespace projectstudy
         {
             c, java, python, english = 10, go
         }
-        static void Main(string[] args)
+        static void test(string[] args)
         {
             
             Console.WriteLine((int)language.c);

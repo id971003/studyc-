@@ -10,9 +10,9 @@ namespace projectstudy
      * double 은 아무것도 안붙어도됨, float 보다 좀더 긴 부동소숫점 표현가능
      * deimal 은  위에 m 넣어야함 , double 보다도 긴 소숫점 표현가능
      */
-    class transformValue
+    public class TransformValue
     {
-        static void Main(string[] args)
+        public static void TransformValueTestClass()
         {
             //string>int
             string a = "12345";

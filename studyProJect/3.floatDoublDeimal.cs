@@ -11,9 +11,9 @@ namespace projectstudy
      * deimal 은  위에 m 넣어야함 , double 보다도 긴 소숫점 표현가능
      */
 
-    class floatDoublDeimal
+    public class FloatDoublDeimal
     {
-        static void Main(string[] args)
+        public static void FloatDoubleDeimalTestClass()
         {
             float f = 3.14159265358979323846f;
 

@@ -12,9 +12,9 @@ namespace projectstudy
      * 
      */
 
-    class stringCharObject
+    public class StringCharObject
     {
-        static void Main(string[] args)
+        public static void StringCharObjectTestClass()
         {
             char a = '공';
             char b = '부';

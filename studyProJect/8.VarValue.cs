@@ -11,7 +11,7 @@ namespace projectstudy
      */
     class VarValue
     {
-        static void Main(string[] args)
+        static void VarValueTestClass(string[] args)
         {
             var a = 20;
             var b = 'b';

@@ -22,7 +22,7 @@ namespace projectstudy
      */
     class Operator
     {
-        static void Main(string[] args)
+        static void OperatorTestClass(string[] args)
         {
             //산술 증/감소
             int a = 7;

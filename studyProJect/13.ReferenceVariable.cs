@@ -12,7 +12,7 @@ namespace projectstudy
      */
     class ReferenceVariable
     {
-        static void Main(string[] arg)
+        static void ReferenceVariableTestClass(string[] arg)
         {
             int x = 3;
             int y = 4;

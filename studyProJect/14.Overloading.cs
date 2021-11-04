@@ -10,7 +10,7 @@ namespace projectstudy
      */
     class Overloading
     {
-        static void Main(string[] arg)
+        static void OverloadingTestClass(string[] arg)
         {
             int x = 1;
             int y = 1;
