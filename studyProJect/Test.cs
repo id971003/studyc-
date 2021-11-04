@@ -8,7 +8,7 @@ namespace projectstudy
     {
         static void Main(string[] arg)
         {
-            StackHeap.StackHeapTestClass();
+            //StackHeap.StackHeapTestClass();
         }
     }
 }
