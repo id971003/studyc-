@@ -8,25 +8,40 @@ namespace projectstudy
       * enum 은 변수를 만든다?
       * enum convert to string 
       */
-    class enumValue
+    public class EnumValue
     {
-        enum language
+        enum Language
         {
-            c, java, python, english = 10, go
+            c, java, python, english = 10, go 
         }
-        static void test(string[] args)
+        public static void EnumValueTestClass()
         {
-            
-            Console.WriteLine((int)language.c);
-            Console.WriteLine(language.c.ToString() == "c"); //tostring() 으로 enum > string 값을 변환 가능 
 
-            
+            //Tostring
+            Console.WriteLine((int)Language.c);
+            Console.WriteLine(Language.c.ToString() == "c"); //tostring() 으로 enum > string 값을 변환 가능 
 
-            foreach(language b in Enum.GetValues(typeof(language))) // 열거형 상수의 배열 검색 후 string 전환 
+            //GetValue(typeof)
+            foreach(Language b in Enum.GetValues(typeof(Language))) // 열거형 상수의 배열 검색 후 string 전환 
             {
                 string value = b.ToString();
                 Console.WriteLine(value);
             }
+            
+
+            //TryParse(Type Enum(구문구석에 사용할 열거형) , value (대소문자 구문할건지 할거면true),out result (반환 되는 개체) )
+            string MyLanguage="c";
+            Language parm;
+
+            Enum.TryParse(MyLanguage,true,out parm);
+
+            Console.WriteLine(MyLanguage+" "+MyLanguage.GetType());
+            Console.WriteLine(parm+" "+parm.GetType());
+            
+            
+
+
+
         }
     }
 }

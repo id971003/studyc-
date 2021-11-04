@@ -14,15 +14,15 @@ namespace projectstudy
         static void ChoiceNameValueTestClass(string[] arg)
         {
             Profile("김갑순", "12341234", "서울");
-            Profile(name: "킴취", adress: "미국", phone: "43214321");
+            Profile(Name: "킴취", Phone: "미국", Adress: "43214321");
 
             Console.WriteLine(Sum(5));   //0~5 까지합
             Console.WriteLine(Sum(5, 0)); //0~5까지 합
             Console.WriteLine(Sum(5, 2)); // 2~5 까지합
         }
-        static void Profile(string name, string phone, string adress)
+        static void Profile(string Name, string Phone, string Adress)
         {
-            Console.WriteLine("name : {0} phonenumber : {1} adress {2}", name, phone, adress);
+            Console.WriteLine("name : {0} phonenumber : {1} adress {2}", Name, Phone, Adress);
         }
 
         static int Sum(int end, int start = 0)

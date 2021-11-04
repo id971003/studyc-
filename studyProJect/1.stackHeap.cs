@@ -21,7 +21,6 @@ namespace projectstudy
             } //} 만나며 c>b>a 순으로 제거
 
 
-
             //힙
             {
                 object a = 20;
