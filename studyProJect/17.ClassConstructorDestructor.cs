@@ -15,6 +15,7 @@ namespace projectstudy
         {
             Preson Me = new Preson("김동호",25);
             Preson Brother = new Preson("김갑순",19);
+            
             Me.appear();
             Brother.appear();
         }

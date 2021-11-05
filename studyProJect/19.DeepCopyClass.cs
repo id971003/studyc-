@@ -5,8 +5,7 @@ using System.Text;
 namespace projectstudy
 {
     /* 
-    StaticField 의 경우 인스턴스에 속하지 않고 클래스에 소속됨 (프로그램 전체에서 유일하다)
-    StaticField 가 아닐경우 자동으로 인스턴스에 소속됨
+    클래스는 참조 형식이 복사시 주소를 새로 만들어줘야함
      */
     class DeepCopyClass
     {
@@ -15,7 +14,7 @@ namespace projectstudy
             MyClass Source = new MyClass();  //Source 인스턴스를 만들고 각각 10,20 을할당한후
             Source.MyField1=10;
             Source.MyField2=20;
-
+            
             MyClass Target = Source; // Source 인스턴스를 Target 에 할당한후 Target 에 myfield2 를 30 으로 바꾸면
             Target.MyField2=30; // Source 와 target 의 MyField2 가 모두 30 으로 바뀐다  클래스는 참조 형식 이기 때문에 Source 와 Target 이 같은 참조를 복사했기때문이다 (얇은 복사)
 

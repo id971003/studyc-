@@ -14,9 +14,11 @@ namespace projectstudy
         public static void BaceDerivedClassTestClass()
         {
             BaseClass Base = new BaseClass("김");
+            
             Base.BaseMethod();
 
             Derived Derived = new Derived("동");
+
             Derived.BaseMethod();
             Derived.DerivedMethod();
         }

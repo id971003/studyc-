@@ -20,9 +20,9 @@ namespace projectstudy
         public static void NestedClassTestClass()
         {
             Configuration Config = new Configuration();
+
             Config.SetConfig("Version","V5");
             Config.SetConfig("Size","51KB");
-
             Console.WriteLine(Config.GetConfig("Version"));
             Console.WriteLine(Config.GetConfig("Size"));
         }

@@ -24,6 +24,7 @@ namespace projectstudy
 
             OverD.Number(); //파생클래스의 number 메서드 
 
+
             OverringBaceClass OverD2 = new OverringDerivedClass();
 
             OverD2.Number2(); //기반클래스의 number 메서드 
