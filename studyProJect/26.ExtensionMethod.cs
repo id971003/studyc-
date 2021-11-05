@@ -16,6 +16,7 @@ namespace projectstudy
         public static void ExtensionMethodTestClass()
         {
             string Name = "동호";
+            
             Console.WriteLine(Name.AddHi());
             
         }
