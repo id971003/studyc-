@@ -4,10 +4,12 @@ using System.Text;
 
 namespace projectstudy
 {
+    
     class Test
     {
         static void Main(string[] arg)
         {
+            IsAsKeyword.IsAsKeywordTestClass();
         }
     }
 }

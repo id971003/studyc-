@@ -7,11 +7,11 @@ namespace projectstudy
     /* 
      * 명명 매개변수: 매개 변수중 어떤 변수에 데이터를 지정할지 숫서 정사기 (? 사용처 : 매개변수가 많을때순서 섞기)
      * 
-     * 선택적 매개 변수 : 매개변수중 기본 값을 가지고 싶을때
+     * 선택적 매개 변수 : 매개변수중 기본 값을 가지고 싶을때 (형식이 다르면 오버로딩 해야됨)
      */
     class ChoiceNameValue
     {
-        static void ChoiceNameValueTestClass(string[] arg)
+        static void ChoiceNameValueTestClass()
         {
             Profile("김갑순", "12341234", "서울");
             Profile(Name: "킴취", Phone: "미국", Adress: "43214321");

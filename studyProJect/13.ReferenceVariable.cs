@@ -17,22 +17,26 @@ namespace projectstudy
             int x = 3;
             int y = 4;
             int result = Calculator.Add(x, y); //이때 x,y 를 add 의 a,b 에 전달할때 x,y 랑 a,b 는 서로 다른 메모리를 할당받는다
-            Console.WriteLine(result); //x=3, y 4
 
+            Console.WriteLine(result); //x=3, y 4
 
 
             Calculator.Swap(x, y); //call by value 메서드를 호출할때 데이터를 복사해서 매개 변수로 넘기는것 
 
             Console.WriteLine("X : {0} Y :{1}", x, y); // x,y 는 변하지 않는다 
 
+
             Calculator.Swapref(ref x, ref y);
+
             Console.WriteLine("X : {0} Y :{1}", x, y);//x=4, y=3 으로 변한다
+
 
             int a = 4;
             int b = 2;
             int qut, rem;
 
             Calculator.Divice(a, b, out qut, out rem);
+            
             Console.WriteLine("Qutient :{0}  remainder : {1}", qut, rem);
         }
     }

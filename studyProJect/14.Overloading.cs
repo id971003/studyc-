@@ -16,6 +16,7 @@ namespace projectstudy
             int y = 1;
             double z = 1;
             double a = 1;
+            
             Console.WriteLine(Add(x, y));
             Console.WriteLine(Add(x, z));
             Console.WriteLine(Add(a, z));
