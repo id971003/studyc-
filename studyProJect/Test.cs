@@ -9,7 +9,7 @@ namespace projectstudy
     {
         static void Main(string[] arg)
         {
-            OverridingKeywold.OverridingKeywoldTestClass();
+            ExtensionMethod.ExtensionMethodTestClass();
         }
     }
 }
