@@ -11,7 +11,7 @@ namespace projectstudy
      */
 
      
-    class ExtensionMethod
+    class ExtensionMethodClass
     {
         public static void ExtensionMethodTestClass()
         {
