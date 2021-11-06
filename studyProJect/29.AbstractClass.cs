@@ -17,11 +17,8 @@ namespace projectstudy
         public  void DoSomething()
         {
             Console.WriteLine("Something");
-            
         }
         public abstract void SayHi();  //추상 클래스안에 추상 메소드
-
-//        
     }
     abstract class AbstrctDerivedClass :AbstractBaseClass //추상클래스를 상속 받는 추상클래스 , Sayhi 구현 안해도됨 
     {
@@ -46,8 +43,6 @@ namespace projectstudy
             Der.DoSomething();
             Der.DSomethingPlusAlpa();
         }
-        
-
     }
 
 }
