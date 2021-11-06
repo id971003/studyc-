@@ -9,7 +9,8 @@ namespace projectstudy
     {
         static void Main(string[] arg)
         {
-            Structure.StructureTestClass();
+            AbstractClass.AbstractClassTstClass();
         }
     }
 }
+
