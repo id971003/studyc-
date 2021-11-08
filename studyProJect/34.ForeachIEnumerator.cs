@@ -17,7 +17,7 @@ namespace projectstudy
     void Reset : 컬렉션의 가장첫위치 -1로 이동한다
     Obejct Current : 컬렉션의 현재요소 반환 
     */
-        class ForeachIenumeratorTestClass : IEnumerator , IEnumerable
+    class ForeachIenumeratorTestClass : IEnumerator , IEnumerable
     {
         int Position=-1;   // foreach 문 실행시 MoveNext 를 실행해 다음 요소를 가져옴으로 시작값은 -1 (1을 더하고 가져오기때문)
         private int[] ForeachIenumeratorTestClassArray;
