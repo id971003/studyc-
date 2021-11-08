@@ -16,14 +16,6 @@ namespace projectstudy
     where T: "InterfaceName" 명시한 인터페이스를 구현해야한다.
     where T: U 
     */    
-    class GenericProgrammingClass 
-    {
-        static void CopyArray<T> (T[] Source , T[] Target) //일반화 메소드
-        {
-            for(int i=0;i<Source.Length;i++)
-            Target[i]=Source[i];
-        }
-
         class PrintArrayClass<T>  //일반화 클레스 
         {
             public void PrintArray (T[] Val)
@@ -34,6 +26,15 @@ namespace projectstudy
                 }
             }
         }
+    class GenericProgrammingClass 
+    {
+        static void CopyArray<T> (T[] Source , T[] Target) //일반화 메소드
+        {
+            for(int i=0;i<Source.Length;i++)
+            Target[i]=Source[i];
+        }
+
+
 
         class StructArray<T> where T:struct //where
         {
