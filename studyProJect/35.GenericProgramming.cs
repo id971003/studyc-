@@ -8,6 +8,7 @@ namespace projectstudy
 
     /*
     Generic : 데이터 형식을 일반화한다.
+    
     where : Generic 의 형식을 제안할수있다
     where T: struct 값형식 이여야한다.
     where T: class 참조형식이여야한다.

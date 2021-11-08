@@ -9,7 +9,7 @@ namespace projectstudy
     {
         static void Main(string[] arg)
         {
-            GenericProgrammingClass.GenericProgrammingClassTestClass();
+            EventCLass.EventCLassTestClass();
         }
     }
 }
