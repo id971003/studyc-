@@ -31,7 +31,7 @@ namespace projectstudy
         }
     }
 
-    class DelegateChainClass 
+    class DelegateChainClass
     {
 
         public static void DelegateChainClassTestClass()
@@ -42,14 +42,14 @@ namespace projectstudy
             EventListener listener3 = new EventListener("listen3");
 
 
-            notifier.eventOccured+=listener1.SomethingHappend;
-            notifier.eventOccured+=listener2.SomethingHappend;
-            notifier.eventOccured+=listener3.SomethingHappend;
-            
+            notifier.eventOccured += listener1.SomethingHappend;
+            notifier.eventOccured += listener2.SomethingHappend;
+            notifier.eventOccured += listener3.SomethingHappend;
+
             notifier.eventOccured("Hi"); //listener1 , 2 3 순서로 실행
-            
-            
-            notifier.eventOccured-=listener3.SomethingHappend;
+
+
+            notifier.eventOccured -= listener3.SomethingHappend;
 
             notifier.eventOccured("Hi"); //listener 1 ,2 순서로 실행 
         }

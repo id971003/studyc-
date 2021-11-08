@@ -13,6 +13,7 @@ namespace projectstudy
     Stack : LastIn LastOut
     Hashtable : 키 로 데이터를 찾는다 :타배열보다 탐색 속도가 빠름 (거의 없다)  
     Indexer : 클레스의 프로퍼티를 배열처럼 다루게해준다 (?)
+
     */
         class IndexClass
     {
@@ -37,7 +38,6 @@ namespace projectstudy
                 IndexArray[index]=value;
             }
         }
-
     }
     class CollectionClass 
     {

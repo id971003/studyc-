@@ -35,10 +35,6 @@ namespace projectstudy
 
             CallBack =new MyDelegate(del.Minus);
             Console.WriteLine(CallBack(5,4));
-            
-            
-            
-
         }
     }
 }

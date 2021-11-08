@@ -7,9 +7,9 @@ namespace projectstudy
     
     class Test
     {
-        static void Main(string[] arg)
+         static void Main(string[] arg)
         {
-            EventCLass.EventCLassTestClass();
+            DynamicClass.DynamicClassTestClass();
         }
     }
 }
