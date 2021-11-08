@@ -9,7 +9,7 @@ namespace projectstudy
     {
          static void Main(string[] arg)
         {
-            DynamicClass.DynamicClassTestClass();
+            CollectionClass.CollectionClassTestClass();
         }
     }
 }

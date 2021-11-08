@@ -8,6 +8,15 @@ namespace projectstudy
     /*
     EventKeyWord:  델리게이트를 event 한정자로 수식한다
     delegate vs event : 이벤트는 외부에서 직접 사용할수 없다 자신이 선언되어있는 클래스 외부에서 호출 불가능 / delegate 는 외부 호출가능
+
+    “Event는 Delegate를 캡슐화 시킨 것이다.”
+    https://blog.naver.com/silent1002/10086120655
+
+    "통지 구조를 인터페이스에 드러내거나 publish 동작을 클래스 내부에 감추는 목적으로 이벤트와 델리게이트를 구분해서 쓰면 될 것 같다."
+    https://okminseok.blogspot.com/2019/09/c-event-vs-delegate.html
+
+    "Evnet 는 프로퍼티 라고 생각하자"
+    https://freeprog.tistory.com/261
     */
     delegate void EventClassEventhandler(string message); //델리게이트
 

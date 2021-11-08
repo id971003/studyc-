@@ -14,6 +14,16 @@ namespace projectstudy
     Hashtable : 키 로 데이터를 찾는다 :타배열보다 탐색 속도가 빠름 (거의 없다)  
     Indexer : 클레스의 프로퍼티를 배열처럼 다루게해준다 (?)
 
+
+    Collection vs Collection.Generic
+    결론 : Collection.Generic  > Collection
+    이유
+    
+    1. Collection 은 object 형식으로 관리함으로 Boxing 과 Unboxing 이 발생해 Collection.Generic에비해  프로그램 성능 저하
+    public virtual int Add(object? value);
+    (컬랙션의 요소가 값형식일때?)
+    2. Collection.Generic 는 Collection 과 다르가 타입이 같은 변수끼리 모아 관리함으로 안정성에서 뛰어남 
+    https://docs.microsoft.com/ko-kr/dotnet/standard/collections/when-to-use-generic-collections    
     */
         class IndexClass
     {
