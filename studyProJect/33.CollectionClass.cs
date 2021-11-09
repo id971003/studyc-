@@ -61,7 +61,9 @@ namespace projectstudy
             list.Insert(1,"sr"); // 해당번호에 요소를 추가 
 
             foreach(object Var in list)
-            Console.WriteLine(Var+" : " +Var.GetType());
+            {
+                Console.WriteLine(Var+" : " +Var.GetType());
+            }
 
 
             Queue Que = new Queue(); //Queue
@@ -71,7 +73,9 @@ namespace projectstudy
 
             Console.WriteLine(Que.Count); //3
             for(int i=0;i<3;i++)
-            Console.WriteLine(Que.Dequeue()); //1,2,3 순으로 출력 후 뺌
+            {
+                Console.WriteLine(Que.Dequeue()); //1,2,3 순으로 출력 후 뺌
+            }
             Console.WriteLine(Que.Count); //  0
 
 
@@ -82,7 +86,9 @@ namespace projectstudy
 
             Console.WriteLine(Sta.Count);
             for(int i=0;i<3;i++)
-            Console.WriteLine(Sta.Pop()); //3,2,1순으로 출록후 뺌
+            {
+                Console.WriteLine(Sta.Pop()); //3,2,1순으로 출록후 뺌
+            }
             Console.WriteLine(Sta.Count); //  0
 
 
@@ -97,10 +103,14 @@ namespace projectstudy
             IndexClass IC = new IndexClass(); // Indexer 
 
             for(int i=0;i<4;i++)
-            IC[i]=i;
+            {
+                IC[i]=i;
+            }
 
             for(int i=0;i<4;i++)
-            Console.WriteLine(IC[i]);
+            {
+                Console.WriteLine(IC[i]);
+            }
 
         }
     }

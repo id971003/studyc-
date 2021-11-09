@@ -19,13 +19,14 @@ namespace projectstudy
         delegate void LamdaDoSoumthing();
         public static void LambdaClassTestClass()
         {
-            LamdaCalculate Calc =(int a, int b) => a+b; //람다식
+            LamdaCalculate Calc = (int a, int b) => a + b; //람다식
             //LamdaCalculate Calc =(a, b) => a+b 이렇게 int 삭제가능 (형식유추)
 
-            Console.WriteLine(Calc(1,5));
+            Console.WriteLine(Calc(1, 5));
 
 
-            LamdaDoSoumthing Dosomething = () =>{     //문형의 람다식 
+            LamdaDoSoumthing Dosomething = () =>
+            {//문형의 람다식 
                 Console.WriteLine("1");
                 Console.WriteLine("2");
                 Console.WriteLine("3");
@@ -33,13 +34,13 @@ namespace projectstudy
 
             Dosomething();
 
-            Func<int,int> Func1 = (x) => x*x; //Func   이때 가장 마지막 매개변수의 형식이 Func 의 반환 형식이다
+            Func<int, int> Func1 = (x) => x * x; //Func   이때 가장 마지막 매개변수의 형식이 Func 의 반환 형식이다
 
             Console.WriteLine(Func1(5));
 
 
-            int Result=0;  
-            Action<int> Act1 = (x) => Result=x*x; //action
+            int Result = 0;
+            Action<int> Act1 = (x) => Result = x * x; //action
 
             Act1(5);
             Console.WriteLine(Result);

@@ -8,8 +8,6 @@ namespace projectstudy
      * char 는 '' 로 string 은 ""로 감싸줘야함 
      * bool 형식은 true 랑 false 뿐
      * obejct  모든 형식
-     * 
-     * 
      */
 
     public class StringCharObject

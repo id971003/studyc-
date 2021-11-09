@@ -7,27 +7,34 @@ namespace projectstudy
 {
 
     /*
-    foreach 를 사용하려면 IEnumerator 와 Ienumerable 을 상속하는 형식 만 지원한다 
+    foreach 를 사용하려면 Ienumerable 을 상속하는 형식 만 지원한다 
 
-    Ienumerable :  GetEnumerator 
+    Ienumerable :  GetEnumerator (제네릭이 아닌 컬렉션에서 단순하게 반복할 수 있도록 지원하는 열거자를 노출합니다.)
     GetEnumerator :IEnumerator 형식의 객체를 반환한다
+    https://docs.microsoft.com/ko-kr/dotnet/api/system.collections.ienumerable?view=net-5.0
 
-    IEnumerator : MoveNext ,Reset ,Current
+
+    IEnumerator : MoveNext ,Reset ,Current  (제네릭이 아닌 컬렉션을 반복할수있도록 지원한다)
     boolean MoveNext : 다음요소로 이동한다 (끝나면 flase 이동성공시 True 반환)
     void Reset : 컬렉션의 가장첫위치 -1로 이동한다
     Obejct Current : 컬렉션의 현재요소 반환 
+    https://docs.microsoft.com/ko-kr/dotnet/api/system.collections.ienumerator?view=net-5.0
+
+
+    yield 
+    https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/yield
+
+    
+    
     */
 
-    //https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/yield
-    
-
-    class ForeachIenumeratorTestClass :  IEnumerable
+    class ForeachIenumeratorTestClass : IEnumerable
     {
-        int Position=-1;   // foreach 문 실행시 MoveNext 를 실행해 다음 요소를 가져옴으로 시작값은 -1 (1을 더하고 가져오기때문)
+        int Position = -1;   // foreach 문 실행시 MoveNext 를 실행해 다음 요소를 가져옴으로 시작값은 -1 (1을 더하고 가져오기때문)
         private int[] ForeachIenumeratorTestClassArray;
         public ForeachIenumeratorTestClass()
         {
-            ForeachIenumeratorTestClassArray=new int[3];
+            ForeachIenumeratorTestClassArray = new int[3];
         }
         public int this[int index]
         {
@@ -37,19 +44,19 @@ namespace projectstudy
             }
             set
             {
-                if(index >= ForeachIenumeratorTestClassArray.Length)
+                if (index >= ForeachIenumeratorTestClassArray.Length)
                 {
-                    Array.Resize<int>(ref ForeachIenumeratorTestClassArray,index+1);
+                    Array.Resize<int>(ref ForeachIenumeratorTestClassArray, index + 1);
                     Console.WriteLine("Array Resize");
                 }
-                ForeachIenumeratorTestClassArray[index]=value;
+                ForeachIenumeratorTestClassArray[index] = value;
             }
         }
 
 
         public IEnumerator GetEnumerator() //IEnumerable 메소드
         {
-            for(int i=0;i<ForeachIenumeratorTestClassArray.Length;i++) 
+            for (int i = 0; i < ForeachIenumeratorTestClassArray.Length; i++)
             {
                 yield return (ForeachIenumeratorTestClassArray[i]); // 배열값을 반환한다
             }
@@ -80,19 +87,16 @@ namespace projectstudy
         */
 
     }
-    class ForeachIEnumerator 
+    class ForeachIEnumerator
     {
         public static void ForeachIEnumeratorTestClass()
         {
             ForeachIenumeratorTestClass list = new ForeachIenumeratorTestClass();
-            for(int i=0;i<3;i++)
-            list[i]=i;
+            for (int i = 0; i < 3; i++)
+                list[i] = i;
 
-            foreach(int val in list)
-            Console.WriteLine(val);
+            foreach (int val in list)
+                Console.WriteLine(val);
         }
     }
-
-
-
 }

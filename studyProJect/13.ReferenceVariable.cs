@@ -36,7 +36,7 @@ namespace projectstudy
             int qut, rem;
 
             Calculator.Divice(a, b, out qut, out rem);
-            
+
             Console.WriteLine("Qutient :{0}  remainder : {1}", qut, rem);
         }
     }

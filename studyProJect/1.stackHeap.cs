@@ -5,28 +5,27 @@ namespace projectstudy
     //데이터
     //스택vs 힙 
     //스택 에 있는 값은 {} 를 만나며 바로 지워지지만 힙에 있는 값은 바로 지워지지않는다 
-
     //정수 계열 형식
     public class StackHeap
-    {//123
+    {
         public static void StackHeapTestClass()
         {
             {
-                int a = 100;
-                int b = 200;
-                int c = 300;
+                int A = 100;
+                int B = 200;
+                int C = 300;
 
-                Console.WriteLine(a + " " + b + " " + c);
+                Console.WriteLine(A + " " + B + " " + C);
                 //a>b>c순으로 스택에 쌓임
             } //} 만나며 c>b>a 순으로 제거
 
 
             //힙
             {
-                object a = 20;
-                object b = "Study";
+                object A = 20;
+                object B = "Study";
 
-                Console.WriteLine(a + " " + b);
+                Console.WriteLine(A + " " + B);
             } // 스택에서는 a  ,b 둘다제거  but 힙에는 20,study 값 남아있음 (이후 가비지컬렉터가 수거)
 
 
