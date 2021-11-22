@@ -12,26 +12,26 @@ namespace projectstudy
     {
         public static void ThisKeywordTestClass()
         {
-            ThisKeyWordClass1 MyClass= new ThisKeyWordClass1();
+            ThisKeyWordClass1 MyClass = new ThisKeyWordClass1();
             MyClass.SetName("김동호");
 
             Console.WriteLine(MyClass.GetName());
 
 
-            ThisKeyWordClass2 Myclass2= new ThisKeyWordClass2(456,789);
+            ThisKeyWordClass2 Myclass2 = new ThisKeyWordClass2(456, 789);
 
-            Console.WriteLine("{0} : {1} : {2}",Myclass2.a,Myclass2.b,Myclass2.c);
+            Console.WriteLine("{0} : {1} : {2}", Myclass2.a, Myclass2.b, Myclass2.c);
 
         }
 
     }
-    class ThisKeyWordClass1 
+    class ThisKeyWordClass1
     {
         private string Name;
 
         public void SetName(string Name) // 
         {
-            this.Name=Name;
+            this.Name = Name;
         }
         public string GetName()
         {
@@ -40,7 +40,7 @@ namespace projectstudy
     }
     class ThisKeyWordClass2
     {
-        public int a,b,c;
+        public int a, b, c;
         /*
         public ThisKeyWordClass2() //생성자
         {
@@ -60,20 +60,20 @@ namespace projectstudy
             this.c=c;
         }
         */
-        
+
         public ThisKeyWordClass2()
         {
-            this.a=123;
+            this.a = 123;
         }
-        public ThisKeyWordClass2(int b) :this() 
+        public ThisKeyWordClass2(int b) : this()
         {
-            this.b=b;
+            this.b = b;
         }
-        public ThisKeyWordClass2(int b,int c)  : this(b)
+        public ThisKeyWordClass2(int b, int c) : this(b)
         {
-            
-            this.c=c;
+
+            this.c = c;
         }
-        
+
     }
 }

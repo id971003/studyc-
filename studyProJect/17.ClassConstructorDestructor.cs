@@ -9,13 +9,13 @@ namespace projectstudy
 
     소멸자 : 매개변수와 한정자 사용불가능 클래스 이름앞에 "~" 표시 , clr 의 gc 가 객체를 소멸시키는 판단에 소멸자 호출
      */
-     class ClassConstructorDestructor
+    class ClassConstructorDestructor
     {
         public static void ClassConstructorDestructorTestClass()
         {
-            Preson Me = new Preson("김동호",25);
-            Preson Brother = new Preson("김갑순",19);
-            
+            Preson Me = new Preson("김동호", 25);
+            Preson Brother = new Preson("김갑순", 19);
+
             Me.appear();
             Brother.appear();
         }
@@ -25,20 +25,20 @@ namespace projectstudy
     {
         public Preson(string Name, int Age)
         {
-            this.Name=Name;
-            this.Age=Age;
+            this.Name = Name;
+            this.Age = Age;
         }
         public string Name;
         public int Age;
 
         public void appear()
         {
-            Console.WriteLine("{0}{1} : 등장",Name,Age);
+            Console.WriteLine("{0}{1} : 등장", Name, Age);
         }
-        
+
         ~Preson()
         {
-            Console.WriteLine("{0}{1} : 퇴장",Name,Age);
+            Console.WriteLine("{0}{1} : 퇴장", Name, Age);
         }
     }
 }

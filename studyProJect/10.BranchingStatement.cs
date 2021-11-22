@@ -12,11 +12,10 @@ namespace projectstudy
          */
     class BranchingStatement
     {
-        
+
         static void MaBranchingStatementTestClass(string[] args)
         {
             //if 와 else if
-
             int a = 1;
 
             if (a < 0)

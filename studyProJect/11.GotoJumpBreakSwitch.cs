@@ -59,7 +59,7 @@ namespace projectstudy
                 default:
                     goto gotob;
             }
-            gotob: Console.WriteLine("끝");//abc:end끝
-            }
+        gotob: Console.WriteLine("끝");//abc:end끝
+        }
     }
 }

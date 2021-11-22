@@ -15,12 +15,12 @@ namespace projectstudy
     sealed : 오버라이딩이 불가능하다 막는다  virtual 선언된 가상메소드를 오버라이딩 한 버전의 메소드만 가능 
      */
 
-     
+
     class OverridingKeywold
     {
         public static void OverridingKeywoldTestClass()
         {
-            OverringDerivedClass OverD=new OverringDerivedClass();
+            OverringDerivedClass OverD = new OverringDerivedClass();
 
             OverD.Number(); //파생클래스의 number 메서드 
 
@@ -49,7 +49,7 @@ namespace projectstudy
             base.Number();
             Console.WriteLine(",3,4,5");
         }
-        public  new void Number2() // 상속시 변화를 주고싶은 메서드 
+        public new void Number2() // 상속시 변화를 주고싶은 메서드 
         {
             Console.WriteLine("7,8");
         }

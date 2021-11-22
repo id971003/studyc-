@@ -8,18 +8,18 @@ namespace projectstudy
 
      */
 
-     
+
     class ParticalClassExtensionMethod
     {
         public static void ParticalClassExtensionMethodTestClass()
         {
             ParticalClass ParticalC = new ParticalClass();
-            
+
             ParticalC.Num1();
             ParticalC.Num2();
             ParticalC.Num3();
             ParticalC.Num4();
-            
+
         }
     }
     partial class ParticalClass

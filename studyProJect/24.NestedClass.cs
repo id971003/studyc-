@@ -14,15 +14,15 @@ namespace projectstudy
     ?은닉성이 무너지지만 더 유연해진다 ?
      */
 
-     
+
     class NestedClass
     {
         public static void NestedClassTestClass()
         {
             Configuration Config = new Configuration();
 
-            Config.SetConfig("Version","V5");
-            Config.SetConfig("Size","51KB");
+            Config.SetConfig("Version", "V5");
+            Config.SetConfig("Size", "51KB");
             Console.WriteLine(Config.GetConfig("Version"));
             Console.WriteLine(Config.GetConfig("Size"));
         }
@@ -30,17 +30,17 @@ namespace projectstudy
     class Configuration
     {
         List<ItemValue> ListConfig = new List<ItemValue>();
-        
-        public void SetConfig(string item,string value)
+
+        public void SetConfig(string item, string value)
         {
             ItemValue Iv = new ItemValue();
-            Iv.SetValue(this,item,value);
+            Iv.SetValue(this, item, value);
         }
         public string GetConfig(string item)
         {
-            foreach(ItemValue iv in ListConfig)
+            foreach (ItemValue iv in ListConfig)
             {
-                if(iv.GetItem()==item)
+                if (iv.GetItem() == item)
                 {
                     return iv.GetValue();
                 }
@@ -54,24 +54,24 @@ namespace projectstudy
             private string Item;
             private string Value;
 
-            public void SetValue(Configuration config , string item , string vaule)
+            public void SetValue(Configuration config, string item, string vaule)
             {
-                this.Item=item;
-                this.Value=vaule;
+                this.Item = item;
+                this.Value = vaule;
 
                 bool found = false;
 
-                for(int i=0;i<config.ListConfig.Count;i++) // 상위 클레스의 필드에 접근 
+                for (int i = 0; i < config.ListConfig.Count; i++) // 상위 클레스의 필드에 접근 
                 {
-                    if(config.ListConfig[i].Item==item)
+                    if (config.ListConfig[i].Item == item)
                     {
-                        config.ListConfig[i]=this;
-                        found=true;
+                        config.ListConfig[i] = this;
+                        found = true;
                         break;
                     }
                 }
-                if(!found)
-                config.ListConfig.Add(this);
+                if (!found)
+                    config.ListConfig.Add(this);
 
 
 

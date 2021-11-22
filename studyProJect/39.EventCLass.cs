@@ -25,14 +25,14 @@ namespace projectstudy
         public event EventClassEventhandler SomethingHappend; //이벤트핸들러
         public void DoSomething(int number)
         {
-            if(number<10)
+            if (number < 10)
             {
-                SomethingHappend(number.ToString()+"은 10보다 작다");
+                SomethingHappend(number.ToString() + "은 10보다 작다");
             }
-        }    
+        }
     }
 
-    class EventCLass 
+    class EventCLass
     {
         static public void MyHandler(String message)
         {
@@ -41,20 +41,12 @@ namespace projectstudy
         public static void EventCLassTestClass()
         {
             EventNotifier notifier = new EventNotifier();
-            notifier.SomethingHappend+=new EventClassEventhandler(MyHandler); //MyHnadler 를 notifier 의 이벤트핸들러 SomethingHappend 에 넣어서 사용 
+            notifier.SomethingHappend += new EventClassEventhandler(MyHandler); //MyHnadler 를 notifier 의 이벤트핸들러 SomethingHappend 에 넣어서 사용 
             //notifier.SomethingHappend("123"); 외부 객체에서 사용 불가능
-            for(int i=0;i<20; i++)
+            for (int i = 0; i < 20; i++)
             {
                 notifier.DoSomething(i);
             }
-            
-            
         }
     }
 }
-
-    
-
-
-
-

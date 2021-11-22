@@ -26,22 +26,19 @@ namespace projectstudy
 
             Console.WriteLine(d + ":" + d.GetType());
 
+
             //float>int
             float f = 1234.5f;
             int g = (int)f;
 
             Console.WriteLine(g + ":" + g.GetType()); //소숫점없어짐
 
-            //int>float
 
+            //int>float
             int h = 1245;
             float i = (float)h; //더큰범위로 바굴때는 캐스팅 안해도 됨
 
             Console.WriteLine(i + ":" + i.GetType());
-
-
-
-
         }
     }
 }

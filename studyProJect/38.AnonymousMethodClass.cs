@@ -10,26 +10,20 @@ namespace projectstudy
     다시는 사용할 일이없을때 사용
     */
 
-    
+
     delegate int CalCulater(int a, int b);
-    class AnonymousMethodClass 
+    class AnonymousMethodClass
     {
-        
+
         public static void AnonymousMethodClassTestClass()
         {
             CalCulater Calc;
             Calc = delegate (int a, int b)
                 {
-                    return a+b;
+                    return a + b;
                 };
-            Console.WriteLine(Calc(3,4));
-            
+            Console.WriteLine(Calc(3, 4));
+
         }
     }
 }
-
-    
-
-
-
-

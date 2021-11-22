@@ -14,27 +14,27 @@ namespace projectstudy
 
     abstract class AbstractBaseClass // 추상클래스
     {
-        public  void DoSomething()
+        public void DoSomething()
         {
             Console.WriteLine("Something");
         }
         public abstract void SayHi();  //추상 클래스안에 추상 메소드
     }
-    abstract class AbstrctDerivedClass :AbstractBaseClass //추상클래스를 상속 받는 추상클래스 , Sayhi 구현 안해도됨 
+    abstract class AbstrctDerivedClass : AbstractBaseClass //추상클래스를 상속 받는 추상클래스 , Sayhi 구현 안해도됨 
     {
         public void DSomethingPlusAlpa()
         {
             Console.WriteLine("SomethingPlusAlpa");
         }
     }
-    class DerivedClass :AbstrctDerivedClass //추상 클래스를 상속받는 메소드
+    class DerivedClass : AbstrctDerivedClass //추상 클래스를 상속받는 메소드
     {
         public override void SayHi() //추상클래스 안에 추상 메소드를 구현 강제 
         {
             Console.WriteLine("Say Hi!");
         }
     }
-    class AbstractClass 
+    class AbstractClass
     {
         public static void AbstractClassTstClass()
         {
@@ -44,5 +44,4 @@ namespace projectstudy
             Der.DSomethingPlusAlpa();
         }
     }
-
 }

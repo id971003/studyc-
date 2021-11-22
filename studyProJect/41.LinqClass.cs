@@ -13,10 +13,10 @@ namespace projectstudy
     Select : 어떤 항목을 뽑을지
     */
     class LinqClass
-    {        
+    {
         public static void LinqClassTestClass()
         {
-            Car[] CarArray = 
+            Car[] CarArray =
             {
                 new Car(){Cost= 57 , MaxSpeed=100},
                 new Car(){Cost= 58 , MaxSpeed=120},
@@ -26,12 +26,12 @@ namespace projectstudy
             };
 
             var Cars = from Car in CarArray //CarArray 안에
-                            where Car.Cost <58 && Car.MaxSpeed>110  // cost 가 58 보다작고 Maxspeed 가 110 보다 큰
-                            orderby Car.Cost ascending // 값들을 cost 를 기준으로 오름차순으로 정렬해
-                            select Car; //Car를 추출한다
+                       where Car.Cost < 58 && Car.MaxSpeed > 110  // cost 가 58 보다작고 Maxspeed 가 110 보다 큰
+                       orderby Car.Cost ascending // 값들을 cost 를 기준으로 오름차순으로 정렬해
+                       select Car; //Car를 추출한다
 
-            foreach(var car in Cars)                            
-                Console.WriteLine("{0}{1}",car.Cost,car.MaxSpeed);
+            foreach (var car in Cars)
+                Console.WriteLine("{0}{1}", car.Cost, car.MaxSpeed);
 
         }
     }
@@ -39,11 +39,11 @@ namespace projectstudy
     {
         public int Cost
         {
-            get;set;
+            get; set;
         }
         public int MaxSpeed
         {
-            get;set;
+            get; set;
         }
     }
 }

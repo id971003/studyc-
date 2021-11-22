@@ -16,36 +16,36 @@ namespace projectstudy
     where T: "BaseClaseName" 기반클레스의 파생클레스여야한다.
     where T: "InterfaceName" 명시한 인터페이스를 구현해야한다.
     where T: U 
-    */    
-        class PrintArrayClass<T>  //일반화 클레스 
+    */
+    class PrintArrayClass<T>  //일반화 클레스 
+    {
+        public void PrintArray(T[] Val)
         {
-            public void PrintArray (T[] Val)
+            for (int i = 0; i < Val.Length; i++)
             {
-                for(int i =0;i<Val.Length;i++)
-                {
-                    Console.WriteLine(Val[i]);
-                }
+                Console.WriteLine(Val[i]);
             }
         }
-    class GenericProgrammingClass 
+    }
+    class GenericProgrammingClass
     {
-        static void CopyArray<T> (T[] Source , T[] Target) //일반화 메소드
+        static void CopyArray<T>(T[] Source, T[] Target) //일반화 메소드
         {
-            for(int i=0;i<Source.Length;i++)
-            Target[i]=Source[i];
+            for (int i = 0; i < Source.Length; i++)
+                Target[i] = Source[i];
         }
 
 
 
-        class StructArray<T> where T:struct //where
+        class StructArray<T> where T : struct //where
         {
             public T[] Array
             {
-                get;set;
+                get; set;
             }
             public StructArray(int size)
             {
-                Array=new T[size];
+                Array = new T[size];
             }
         }
 
@@ -53,32 +53,24 @@ namespace projectstudy
         public static void GenericProgrammingClassTestClass()
         {
             int[] IntArray = new int[5];
-            StructArray<int> IntArray2  = new StructArray<int>(5);
+            StructArray<int> IntArray2 = new StructArray<int>(5);
 
             string[] StringArray = new string[5];
 
-        for(int i=0;i<IntArray.Length;i++)
+            for (int i = 0; i < IntArray.Length; i++)
             {
-                IntArray[i]=i;
-                StringArray[i]=i+"입니다";
+                IntArray[i] = i;
+                StringArray[i] = i + "입니다";
             }
 
-            CopyArray<int>(IntArray,IntArray2.Array);
-
-      
+            CopyArray<int>(IntArray, IntArray2.Array);
 
 
             PrintArrayClass<int> PrintIntArray = new PrintArrayClass<int>();
             PrintIntArray.PrintArray(IntArray2.Array);
-            
+
             PrintArrayClass<string> PrintStringArray = new PrintArrayClass<string>();
             PrintStringArray.PrintArray(StringArray);
-
-                        
         }
     }
-    
-
-
-
 }

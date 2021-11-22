@@ -13,7 +13,7 @@ namespace projectstudy
     */
 
 
-    class PropertyPerson 
+    class PropertyPerson
     {
         private string name; //프로퍼티 (대소문자?)
         public string Name
@@ -24,13 +24,13 @@ namespace projectstudy
             }
             set
             {
-                Console.WriteLine("이름설정 !"+value); //(자동구현프로퍼티에선 이런거못함 ?)
-                name=value;
+                Console.WriteLine("이름설정 !" + value); //(자동구현프로퍼티에선 이런거못함 ?)
+                name = value;
             }
         }
         public int Age //자동구현 프로퍼티
         {
-            get;set;
+            get; set;
         }
     }
 
@@ -38,27 +38,27 @@ namespace projectstudy
     {
         string Name
         {
-            get;set;
+            get; set;
         }
     }
-    class DogClass : IDog 
+    class DogClass : IDog
     {
         private string name;
         public string Name
         {
-            get{return name;}
-            set{name=value;}
+            get { return name; }
+            set { name = value; }
         }
     }
 
     abstract class AbstractCatClass  //추상클레스 프로퍼티
     {
         public string catname;
-        
+
         public string CatName
         {
-            get { return catname;}
-            set {catname=value;}
+            get { return catname; }
+            set { catname = value; }
         }
     }
 
@@ -66,38 +66,36 @@ namespace projectstudy
     {
     }
 
-    class PropertyClass 
+    class PropertyClass
     {
         public static void PropertyTestClass()
         {
             PropertyPerson DongHo = new PropertyPerson();
-            DongHo.Name="동호";
-            DongHo.Age=25;
+            DongHo.Name = "동호";
+            DongHo.Age = 25;
 
             Console.WriteLine(DongHo.Name + DongHo.Age);
 
 
             PropertyPerson NaMi = new PropertyPerson() //프로퍼티를 이용해 객체 생성과 초기화 
             {
-                Name="나미",
-                Age=25
+                Name = "나미",
+                Age = 25
             };
 
-            Console.WriteLine(NaMi.Name + NaMi.Age); 
+            Console.WriteLine(NaMi.Name + NaMi.Age);
 
 
             DogClass Dog = new DogClass() //인터페이스 프로퍼티
-            {Name="까미"};
-            
+            { Name = "까미" };
+
             Console.WriteLine(Dog.Name);
 
 
             CatClass Cat = new CatClass();
-            Cat.CatName="꾸미";
+            Cat.CatName = "꾸미";
 
             Console.WriteLine(Cat.CatName);
-
-
         }
     }
 

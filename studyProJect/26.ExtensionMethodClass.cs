@@ -10,15 +10,15 @@ namespace projectstudy
     선언할 메서드와 클래스를 static 한정자로 수식 , 첫매개변수를 this 한정자로 수식
      */
 
-     
+
     class ExtensionMethodClass
     {
         public static void ExtensionMethodTestClass()
         {
             string Name = "동호";
-            
+
             Console.WriteLine(Name.AddHi());
-            
+
         }
     }
 }
@@ -29,7 +29,7 @@ namespace ExtensionSt
         public static string AddHi(this string Name)
         {
             string hi = "안녕";
-            return Name+hi;
+            return Name + hi;
         }
     }
 }

@@ -23,11 +23,11 @@ namespace projectstudy
         private string name;
         public EventListener(string name)
         {
-            this.name=name;
+            this.name = name;
         }
         public void SomethingHappend(string message)
         {
-            Console.WriteLine("{0}.somethingHappend : {1}",name,message);
+            Console.WriteLine("{0}.somethingHappend : {1}", name, message);
         }
     }
 
@@ -55,9 +55,3 @@ namespace projectstudy
         }
     }
 }
-
-    
-
-
-
-

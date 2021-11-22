@@ -15,10 +15,10 @@ namespace projectstudy
     {
         public static void IsAsKeywordTestClass()
         {
-            Animal animal =new Dog(); //파생클래스를 기반클래스의 인스턴스로 이용
+            Animal animal = new Dog(); //파생클래스를 기반클래스의 인스턴스로 이용
             Dog dog;
 
-            if(animal is Dog) //개가 동물이냐 ?  맞으니 true 
+            if (animal is Dog) //개가 동물이냐 ?  맞으니 true 
             {
                 dog = (Dog)animal; //animal 이 Dog 형식이니 형변환한다
                 dog.Bark();
@@ -29,7 +29,7 @@ namespace projectstudy
             Cat cat1 = animal2 as Cat;  //고양이가 동물이냐 ? 맞으니 cat1 을 Cat 로 형변환
             Cat cat2 = animal as Cat; //고양이가 개냐?  틀리니 cat2  을 null 로만든다
 
-            if(cat1 !=null)
+            if (cat1 != null)
             {
                 cat1.Meow();
             }
@@ -37,8 +37,8 @@ namespace projectstudy
             {
                 Console.WriteLine("cat1 is not Cat");
             }
-            
-            if(cat2 !=null)
+
+            if (cat2 != null)
             {
                 cat2.Meow();
             }
@@ -56,14 +56,14 @@ namespace projectstudy
             Console.WriteLine("Walk");
         }
     }
-    class Dog:Animal
+    class Dog : Animal
     {
         public void Bark()
         {
             Console.WriteLine("Bark");
         }
     }
-    class Cat:Animal
+    class Cat : Animal
     {
         public void Meow()
         {

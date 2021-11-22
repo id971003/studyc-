@@ -13,8 +13,8 @@ namespace projectstudy
         public static void StaticfFieldTestClass()
         {
             Person Me = new Person();
-            Me.Age=25;
-            Person.Name="5";
+            Me.Age = 25;
+            Person.Name = "5";
 
             Console.WriteLine(Me.Age);
             Console.WriteLine(Person.Name);
@@ -24,9 +24,5 @@ namespace projectstudy
     {
         public int Age;
         public static string Name;
-
-        
     }
-
-    
 }

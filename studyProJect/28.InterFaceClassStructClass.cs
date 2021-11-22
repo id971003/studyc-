@@ -15,24 +15,24 @@ namespace projectstudy
     class 는 다중상속을 할수 없지만 interface 는 가능하다
      */
 
-    interface IDebugLog 
+    interface IDebugLog
     {
         void WriteLog(string message);
         //private void WriteLog(string message) 불가능  인터페이스는 구현 이 불가능 함으로 상속을 이용해야 하기 때문에 
     }
-    
+
     interface IDebugLogSayBye
     {
         void SayBye(string name);
     }
 
 
-    interface IDebugLogPlus:IDebugLog //인터페이스를 상속하는 인터페이스  인스턴스가 인스턴스를 상속할때는 부모 인스턴스의 메소드를 구현할필요없음 
+    interface IDebugLogPlus : IDebugLog //인터페이스를 상속하는 인터페이스  인스턴스가 인스턴스를 상속할때는 부모 인스턴스의 메소드를 구현할필요없음 
     {
         void WriteLogPluse(string message);
     }
 
-    struct InterfaceDerivedStrut: IDebugLog,IDebugLogSayBye //인터페이스를 상속하는 구조체
+    struct InterfaceDerivedStrut : IDebugLog, IDebugLogSayBye //인터페이스를 상속하는 구조체
     {
         public void WriteLog(string message)
         {
@@ -40,33 +40,33 @@ namespace projectstudy
         }
         public void WriteLogPluse(string message)
         {
-            Console.WriteLine("메시지! :"+message);
-        }
-                public void SayBye(string name)
-        {
-            Console.WriteLine(name +" Bye");
-        }
-    }
-
-
-
-    class InterfaceDerivedClass : IDebugLogPlus , IDebugLogSayBye//인터페이스를 상속하는 클레스
-    {
-        public void WriteLog(string message)
-        {
-            Console.WriteLine(message);
-        }
-        public void WriteLogPluse(string message)
-        {
-            Console.WriteLine("메시지! :"+message);
+            Console.WriteLine("메시지! :" + message);
         }
         public void SayBye(string name)
         {
-            Console.WriteLine(name +" Bye");
+            Console.WriteLine(name + " Bye");
         }
     }
-    
-    class InterFaceClassStruct 
+
+
+
+    class InterfaceDerivedClass : IDebugLogPlus, IDebugLogSayBye//인터페이스를 상속하는 클레스
+    {
+        public void WriteLog(string message)
+        {
+            Console.WriteLine(message);
+        }
+        public void WriteLogPluse(string message)
+        {
+            Console.WriteLine("메시지! :" + message);
+        }
+        public void SayBye(string name)
+        {
+            Console.WriteLine(name + " Bye");
+        }
+    }
+
+    class InterFaceClassStruct
     {
         public static void InterFaceClassTestClass()
         {
@@ -80,7 +80,5 @@ namespace projectstudy
             InterfaceStruct.WriteLogPluse("안녕");
             InterfaceStruct.SayBye("나");
         }
-
-
     }
 }

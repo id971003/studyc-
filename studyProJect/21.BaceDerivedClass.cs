@@ -14,7 +14,7 @@ namespace projectstudy
         public static void BaceDerivedClassTestClass()
         {
             BaseClass Base = new BaseClass("김");
-            
+
             Base.BaseMethod();
 
             Derived Derived = new Derived("동");
@@ -29,32 +29,32 @@ namespace projectstudy
         public string Name;
         public BaseClass(string Name)
         {
-                this.Name =Name;
-                Console.WriteLine("{0} : Base()",this.Name);
+            this.Name = Name;
+            Console.WriteLine("{0} : Base()", this.Name);
         }
         ~BaseClass()
         {
-            Console.WriteLine("{0} : ~Base()",Name);
+            Console.WriteLine("{0} : ~Base()", Name);
         }
         public void BaseMethod()
         {
-            Console.WriteLine("{0}.BaseMethod()",Name);
+            Console.WriteLine("{0}.BaseMethod()", Name);
         }
     }
     class Derived : BaseClass
     {
         /*BaseClass(Nmae) 호출*/
-        public Derived(string Name): base(Name) 
+        public Derived(string Name) : base(Name)
         {
-            Console.WriteLine("{0}.Drived()",this.Name);
+            Console.WriteLine("{0}.Drived()", this.Name);
         }
         ~Derived()
         {
-            Console.WriteLine("{0}.~Drived()",this.Name);
+            Console.WriteLine("{0}.~Drived()", this.Name);
         }
         public void DerivedMethod()
         {
-            Console.WriteLine("{0}.DerivedMethod()",Name);
+            Console.WriteLine("{0}.DerivedMethod()", Name);
         }
     }
 }
