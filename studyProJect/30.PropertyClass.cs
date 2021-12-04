@@ -98,6 +98,4 @@ namespace projectstudy
             Console.WriteLine(Cat.CatName);
         }
     }
-
-
 }

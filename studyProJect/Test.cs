@@ -9,7 +9,9 @@ namespace projectstudy
     {
          static void Main(string[] arg)
         {
-            EventCLass.EventCLassTestClass();
+            LinkedListClass.LinkedListClassTextClass();
+
+            //c# 3.0 >>>> c#9.0
         }
     }
 }
