@@ -30,7 +30,17 @@ namespace projectstudy
             
             foreach(string a in LinkedList)
             Console.WriteLine(a);
-            
+
+            List<int> b = new List<int>();
+
+            b.Add(1);
+            b.Add(2);
+            b.Add(3);
+            b.Add(4);
+            b.Add(5);
+
+        
+
             
             
         }

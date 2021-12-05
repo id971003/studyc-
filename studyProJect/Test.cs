@@ -9,7 +9,7 @@ namespace projectstudy
     {
          static void Main(string[] arg)
         {
-            LinkedListClass.LinkedListClassTextClass();
+            SortedSetClass.SortedSetTextClass();
 
             //c# 3.0 >>>> c#9.0
         }
