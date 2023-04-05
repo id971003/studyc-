@@ -1,17 +1,18 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace projectstudy
 {
     
     class Test
     {
-         static void Main(string[] arg)
+        static void Main(string[] arg)
         {
-            SortedSetClass.SortedSetTextClass();
+            AsyncAwait.Caller();
 
-            //c# 3.0 >>>> c#9.0
+            Console.Read();
         }
     }
 }
