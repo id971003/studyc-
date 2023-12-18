@@ -17,7 +17,8 @@ namespace projectstudy
 
                 Console.WriteLine(A + " " + B + " " + C);
                 //a>b>c순으로 스택에 쌓임
-            } //} 만나며 c>b>a 순으로 제거
+            }
+            // delet 하면 역순으로 제거됨 c > b > a
 
 
             //힙
