@@ -10,6 +10,7 @@ namespace projectstudy
     {
         public static void StackHeapTestClass()
         {
+            //stack
             {
                 int A = 100;
                 int B = 200;
@@ -21,7 +22,7 @@ namespace projectstudy
             // delet 하면 역순으로 제거됨 c > b > a
 
 
-            //힙
+            //heap
             {
                 object A = 20;
                 object B = "Study";

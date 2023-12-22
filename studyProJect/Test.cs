@@ -5,15 +5,19 @@ using System.Threading;
 
 namespace projectstudy
 {
-    
+
     class Test
     {
         static void Main(string[] arg)
         {
-            AsyncAwait.Caller();
+            // AsyncAwait.Caller();
 
-            Console.Read();
+            // Console.Read();
+
+            ReferenceVariable.ReferenceVariableTestClass(arg);
+
         }
+
     }
 }
 
