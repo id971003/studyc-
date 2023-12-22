@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+// [Enum 열거형]
 namespace projectstudy
 {
-    /*요약
+    /*요형
       * enum 은 변수를 만든다?
       * enum convert to string 
       */

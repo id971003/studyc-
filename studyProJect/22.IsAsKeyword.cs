@@ -20,7 +20,11 @@ namespace projectstudy
 
             if (animal is Dog) //개가 동물이냐 ?  맞으니 true 
             {
-                dog = (Dog)animal; //animal 이 Dog 형식이니 형변환한다
+                int a = 10;
+                object obj = 0;
+                a = (int)obj; // unboxing 
+
+                dog = (Dog)animal; //animal 이 Dog 형식이니 형변환한다   // tpyecasting
                 dog.Bark();
             }
 
