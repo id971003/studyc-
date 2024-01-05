@@ -5,7 +5,7 @@ using System.Text;
 namespace projectstudy
 {
     /* 
-        this : 객체 자신을 지칭 (매개변수와 필드의 이름이 같을때 구별해준다 )
+        this : 객체 자신을 지칭, 클래스 지역 객제 (매개변수와 필드의 이름이 같을때 구별해준다 )
         this() : 자기자신의 생성자를 지칭 , 생성자에서만 사용 , 생성자의 코드블록의 앞쪽에서만 사용가능 (생성자 오버로딩시 사용 ?)
      */
     class ThisKeyword

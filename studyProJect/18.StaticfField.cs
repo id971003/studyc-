@@ -22,6 +22,9 @@ namespace projectstudy
     }
     public class Person
     {
+        //  Person.Name 가능
+        //  Person.Age 불가능
+
         public int Age;
         public static string Name;
     }
