@@ -20,7 +20,7 @@ namespace projectstudy
             Console.WriteLine(Sum(5, 0)); //0~5까지 합
             Console.WriteLine(Sum(5, 2)); // 2~5 까지합
         }
-        
+
         static void Profile(string Name, string Phone, string Adress)
         {
             Console.WriteLine("name : {0} phonenumber : {1} adress {2}", Name, Phone, Adress);

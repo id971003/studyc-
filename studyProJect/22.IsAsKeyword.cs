@@ -31,7 +31,7 @@ namespace projectstudy
 
             Animal animal2 = new Cat(); //
             Cat cat1 = animal2 as Cat;  //고양이가 동물이냐 ? 맞으니 cat1 을 Cat 로 형변환
-            Cat cat2 = animal as Cat; //고양이가 개냐?  틀리니 cat2  을 null 로만든다
+            Cat cat2 = animal as Cat;   //고양이가 개냐?  틀리니 cat2  을 null 로만든다
 
             if (cat1 != null)
             {

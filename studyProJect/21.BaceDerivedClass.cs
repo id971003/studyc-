@@ -8,6 +8,8 @@ namespace projectstudy
      :를통해 상속이 이루어짐 (EX A : B  A에게 B 를 상속 A=파생클래스 B=기반클래스 )
      파생클래스의 고유한 필드와 메서드를 기반 클래스에 넘겨줌
 
+     - base() : 파생 클래스에서 사용 시 기본 클래스의 생성자를 명시적으로 호출 
+        따라서 base() => BaceDerivedClassTestClass()
      */
     class BaceDerivedClass
     {
