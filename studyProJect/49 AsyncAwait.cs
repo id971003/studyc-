@@ -17,6 +17,8 @@ namespace projectstudy
     ///     서버로직 들어가면 enumerator 타입 함루 리턴 불가능
     ///     startcoroutin 은 gc 할당이 높음
     ///     new 지속할당됨 [yield return new ...]
+    ///     반환타입이없음
+    ///     
     ///  
     ///  unitask 장점
     ///     struck 기반 으로 제작되어 zero allocation [ 메모리 안잡아먹음]
@@ -37,6 +39,8 @@ namespace projectstudy
     /// await 연산자 :
     ///     
     ///     
+    /// 2025.3.11 unity unitask 쓰는데 토큰 써서 막 멈추고 하다가 동기 비동기 개념 정립 안되있으니 뭔지모르고 하는느낌이라
+    /// 다시정리함
     ///  
     /// 
     /// 
@@ -46,7 +50,7 @@ namespace projectstudy
     class AsyncAwait
     {
         //Start 쓰기 
-         async static void SomeThing(int count)
+        public async static void SomeThing(int count)
         {
             Console.WriteLine("C");
             Console.WriteLine("D");
@@ -57,12 +61,28 @@ namespace projectstudy
                 {
                     Console.WriteLine("{0}/{1}", i, count);
                     //thread.sleep 의 비동기코드 반면 코드를 블록 안시킴
-                    await Task.Delay(1);
+                    await Task.Delay(1000);
                 }
             });
             Console.WriteLine("G");
             Console.WriteLine("I");
 
+        }
+        public static async Task<int> GetNumberAsync()
+        {
+            await Task.Delay(1000); // 1초 대기 (비동기적)
+            return 42;
+        }
+
+        public static async Task MainAsync()
+        {
+            int result = await GetNumberAsync(); // 1초 후 42를 반환받음
+            Console.WriteLine(result);
+        }
+        public static async Task WaitForSecond(int a)
+        {
+            await Task.Delay(1000); // 1초 대기 (비동기적)
+            Console.WriteLine("5");
         }
         public static void Caller()
         {
