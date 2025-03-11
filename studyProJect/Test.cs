@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace projectstudy
 {
-    
+
     class Test
     {
         static void Main(string[] arg)
         {
-            
             AA();
             Console.Read();
 
@@ -25,9 +24,10 @@ namespace projectstudy
         }
         public static async Task WaitForSecond(int a)
         {
-            await Task.Delay(1000); // 1ÃÊ ´ë±â (ºñµ¿±âÀû)
+            await Task.Delay(1000); // 1ï¿½ï¿½ ï¿½ï¿½ï¿½ (ï¿½ñµ¿±ï¿½ï¿½ï¿½)
             Console.WriteLine("5");
         }
+
     }
 }
 
