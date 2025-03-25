@@ -9,6 +9,7 @@ namespace projectstudy
      * 
      * 선택적 매개 변수 : 매개변수중 기본 값을 가지고 싶을때 (형식이 다르면 오버로딩 해야됨)
      */
+
     class ChoiceNameValue
     {
         static void ChoiceNameValueTestClass()
@@ -25,7 +26,19 @@ namespace projectstudy
         {
             Console.WriteLine("name : {0} phonenumber : {1} adress {2}", Name, Phone, Adress);
         }
+        public class NullTestClass
+        {
+            int test;
 
+            int test2;
+
+            public NullTestClass(int Test, int Test2)
+            {
+                test = Test;
+                test2 = Test2;
+            }
+
+        }
         static int Sum(int end, int start = 0)
         {
             int sum = 0;

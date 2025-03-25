@@ -4,6 +4,7 @@ using System.Text;
 using System.Collections;
 using System.Threading;
 using System.Threading.Tasks;
+using studyProJect;
 
 namespace projectstudy
 {
@@ -12,7 +13,7 @@ namespace projectstudy
     {
         static void Main(string[] arg)
         {
-            AA();
+            NullConditionalOperator.t();
             Console.Read();
 
         }
