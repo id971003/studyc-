@@ -13,7 +13,7 @@ namespace projectstudy
     {
         static void Main(string[] arg)
         {
-            NullConditionalOperator.t();
+            DictionaryInitializer.TA();
             Console.Read();
 
         }
