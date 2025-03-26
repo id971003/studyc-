@@ -18,6 +18,21 @@ namespace projectstudy
             };
 
 
+            //before 
+            foreach (var a in ta)
+            {
+                if (a is Circle)
+                {
+                    Circle cr = (Circle)a;
+                    Console.WriteLine($"반지름{cr.Radius}짜리원임");
+                }
+                if (a is Circle)
+                {
+                    Square sq = (Square)a;
+                    Console.WriteLine($"길이{sq.x}짜리사각형임");
+                }
+            }
+
             foreach (var a in ta)
             {
                 if (a is Circle cr)
@@ -31,19 +46,19 @@ namespace projectstudy
                     Console.WriteLine($"길이{sq.x}짜리사각형임");
                 }
             }
-            foreach(var a in ta)
+            foreach (var a in ta)
             {
                 //switch 도 원래 기본형 [int string bool ]만 쓸수있었는데 클레스 객체에서쓸수있음
-                switch(a)
+                switch (a)
                 {
                     case null:
-                    break;
+                        break;
                     case Circle c:
-                    Console.WriteLine($"반지름{c.Radius}짜리원임");
-                    break;
+                        Console.WriteLine($"반지름{c.Radius}짜리원임");
+                        break;
                     case Square s:
-                    Console.WriteLine($"길이{s.x}짜리사각형임");
-                    break;
+                        Console.WriteLine($"길이{s.x}짜리사각형임");
+                        break;
                 }
             }
         }
@@ -62,7 +77,7 @@ namespace projectstudy
         public int x;
         public Square(int x)
         {
-            this.x=x;
+            this.x = x;
         }
     }
 
