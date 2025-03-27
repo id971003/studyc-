@@ -17,7 +17,7 @@ namespace projectstudy
     public class UsingAdd
     {
         // C# 8.0
-        public void GetDataCS8()
+        public void TANew()
         {
             using var reader = new StreamReader("testfile.txt");
             string data = reader.ReadToEnd();
@@ -27,7 +27,7 @@ namespace projectstudy
         }
 
         // C# 모든 버전
-        public void GetData()
+        public void TA()
         {
             using (var reader = new StreamReader("testfile.txt"))
             {
