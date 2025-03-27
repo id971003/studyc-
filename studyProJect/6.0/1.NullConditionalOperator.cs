@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace studyProJect
+namespace projectstudy
 {
     /// <summary>
     ///  ? 로 널채크해서 널이면 기본값이나 null 던저줌

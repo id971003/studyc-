@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace studyProJect
+namespace projectstudy
 {
     /// <summary>
     /// 딕셔너리 선언할때 인덱서 처럼 [] 로 선언할수있음

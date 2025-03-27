@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace studyProJect
+namespace projectstudy
 {
     /// <summary>
     /// 같은 개발자 분이 자주쓰던거 여기서 나옴

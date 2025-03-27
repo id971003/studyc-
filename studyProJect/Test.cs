@@ -4,7 +4,7 @@ using System.Text;
 using System.Collections;
 using System.Threading;
 using System.Threading.Tasks;
-using studyProJect;
+using static projectstudy.UsingStatic;
 
 namespace projectstudy
 {
@@ -13,8 +13,8 @@ namespace projectstudy
     {
         static void Main(string[] arg)
         {
-            DictionaryInitializer.TA();
-            Console.Read();
+            Indexing ta = new Indexing();
+            ta.TA();
 
         }
         static async void AA()

@@ -2,7 +2,7 @@
 using static System.Console;
 
 
-namespace studyProJect
+namespace projectstudy
 {
     /// <summary>
     /// static 메서드 쓸라면 classname.mathodname 과같이 해야했는데

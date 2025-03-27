@@ -4,8 +4,7 @@ using System.Text;
 using System.Collections;
 using System.Threading;
 using System.Threading.Tasks;
-using studyProJect;
-using static studyProJect.UsingStatic;
+
 
 namespace projectstudy
 {
