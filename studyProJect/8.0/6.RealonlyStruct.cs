@@ -41,6 +41,7 @@ namespace projectstudy
         {
             int perim = tri.Perimeter;
             bool equi = tri.IsEquilateral;
+            //tri.a=6;  //읽기전용 참조 변수라 수정불가
 
             Console.WriteLine($"{perim}, {equi}");
             return tri;
