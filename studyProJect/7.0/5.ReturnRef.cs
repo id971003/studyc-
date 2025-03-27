@@ -24,7 +24,7 @@ namespace projectstudy
 
 
             userAge = new UserAge(5);
-           ref int refage =ref userAge.getUserAge();
+            ref int refage =ref userAge.getUserAge();
             refage = 10;
             Console.WriteLine($"{userAge.Age}랑{refage}"); //10이랑 10 같게 찍힘
         }
