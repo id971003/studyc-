@@ -35,6 +35,7 @@ namespace projectstudy
     ///     반환형식이 task , task<Tresult>,void 이여야한다.
     ///     작업끝날때까지 대기 라면 task , task<tresult>   [await 연산자 만나는 곳으로 제어권 넘겨줌 await 없으면 동기임]
     ///     연산하고 잊어버릴(shoot and forget) 이라면 void 로 선언 [await 없어도 비동기임]
+    ///     근데 결국 동기처럼 내 절차적으로 진행되지만 코드가 멈춤
     ///     
     /// await 연산자 :
     ///     

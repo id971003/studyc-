@@ -5,6 +5,8 @@ using System.Collections;
 using System.Threading;
 using System.Threading.Tasks;
 using static projectstudy.UsingStatic;
+using static System.Console;
+using System.Diagnostics;
 
 namespace projectstudy
 {
@@ -13,7 +15,9 @@ namespace projectstudy
     {
         static void Main(string[] arg)
         {
-            
+            TaskTestClass Ta = new TaskTestClass();
+            Ta.TA();
+            Console.Read();
         }
 
     }
