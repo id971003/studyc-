@@ -19,7 +19,8 @@ namespace projectstudy
     ///
     /// Why?
     /// 일회성 임시실행시 계속 new Thread 로 쓰레드 만들면서 쓰면 성능에 좋지않아서 재사용하면좋음음
-    ///     
+    /// 
+    /// 
     /// </summary>
     class ThreadPoolTest
     {
